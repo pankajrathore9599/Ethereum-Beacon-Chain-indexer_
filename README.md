@@ -8,6 +8,7 @@ Service Layer: This layer acts as the glue between the data access layer and the
 
 API Layer: This is the topmost layer that exposes REST APIs to query the indexed data. It will use Rocket to define endpoints where users can query participation rates. It takes the user requests, passes them to the service layer, and formats the responses to be sent back to the user.
 
+```
 |---------------------|       |------------------------|  
 |     API Layer       |       |       Client           |
 |---------------------|       |------------------------|
@@ -22,3 +23,4 @@ API Layer: This is the topmost layer that exposes REST APIs to query the indexed
 |  Data Access Layer  |<---------------->|       Database         |
 |---------------------|                  |------------------------|
 
+```
